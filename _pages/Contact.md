@@ -1,9 +1,8 @@
 ---
 layout: page
-title: contact
+title: Contact
 permalink: /contact/
 ---
 
-# 깃허브 블로그 생성 및 활용법 실습
-* 사용법 숙지 연습용 블로그
-* 언제든지 삭제될 수 있는 블로그
+## Contact
+* 임시 블로그이므로 별도 연락처 등 기재 없을 예정

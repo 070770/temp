@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Exercise01 | 29176</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Exercise01" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="문제풀이" />
+<meta property="og:description" content="문제풀이" />
+<link rel="canonical" href="https://070770.github.io/temp/%ED%81%AC%EB%A1%A4%EB%A7%81/python/2021/11/22/Exercise01.html" />
+<meta property="og:url" content="https://070770.github.io/temp/%ED%81%AC%EB%A1%A4%EB%A7%81/python/2021/11/22/Exercise01.html" />
+<meta property="og:site_name" content="29176" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-22T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Exercise01" />
+<script type="application/ld+json">
+{"description":"문제풀이","mainEntityOfPage":{"@type":"WebPage","@id":"https://070770.github.io/temp/%ED%81%AC%EB%A1%A4%EB%A7%81/python/2021/11/22/Exercise01.html"},"url":"https://070770.github.io/temp/%ED%81%AC%EB%A1%A4%EB%A7%81/python/2021/11/22/Exercise01.html","@type":"BlogPosting","headline":"Exercise01","dateModified":"2021-11-22T00:00:00-06:00","datePublished":"2021-11-22T00:00:00-06:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/temp/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://070770.github.io/temp/feed.xml" title="29176" /><link rel="shortcut icon" type="image/x-icon" href="/temp/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/temp/">29176</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/temp/about/">About Me</a><a class="page-link" href="/temp/search/">Search</a><a class="page-link" href="/temp/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Exercise01</h1><p class="page-description">문제풀이</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-11-22T00:00:00-06:00" itemprop="datePublished">
+        Nov 22, 2021
+      </time>• 
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/temp/categories/#크롤링">크롤링</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/temp/categories/#Python">Python</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/29176/temp/tree/master/_notebooks/2021-11-22-Exercise01.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/temp/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/29176/temp/master?filepath=_notebooks%2F2021-11-22-Exercise01.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/temp/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/29176/temp/blob/master/_notebooks/2021-11-22-Exercise01.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/temp/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#[연습-1]">[연습-1] </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#앨범-명-넣기-마저-확인">앨범 명 넣기 마저 확인 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#[연습-2]">[연습-2] </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-11-22-Exercise01.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="[연습-1]">
+<a class="anchor" href="#%5B%EC%97%B0%EC%8A%B5-1%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>[연습-1]<a class="anchor-link" href="#%5B%EC%97%B0%EC%8A%B5-1%5D"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>1) 멜론 사이트에서 국내 최신곡 10위까지의 정보를
+노래제목, 가수, 앨범, 좋아요 수를 출력하시오</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://www.melon.com/new/index.htm"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'User-Agent'</span> <span class="p">:</span> <span class="s1">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36'</span><span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="s2">""</span><span class="p">),</span> <span class="s2">"lxml"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span> <span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'class'</span><span class="p">:</span><span class="s1">'wrap_song_info'</span><span class="p">})</span>
+
+
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">song</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'class'</span><span class="p">:</span><span class="s1">'ellipsis rank01'</span><span class="p">})</span>
+        <span class="n">singer</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'class'</span><span class="p">:</span><span class="s1">'ellipsis rank02'</span><span class="p">})</span>
+        <span class="n">singer_name</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'span'</span><span class="p">,</span><span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'class'</span><span class="p">:</span><span class="s1">'checkEllipsis'</span><span class="p">})</span>
+        <span class="n">album</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'class'</span><span class="p">:</span><span class="s1">'ellipsis rank03'</span><span class="p">})</span>
+        
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">song</span><span class="p">)):</span>
+            <span class="n">song_title</span> <span class="o">=</span> <span class="n">song</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+            <span class="n">s_n</span> <span class="o">=</span> <span class="n">singer_name</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+            
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">song</span><span class="p">)):</span>
+                <span class="n">s_n</span> <span class="o">=</span> <span class="n">singer_name</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">((</span><span class="n">i</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">)),</span><span class="s1">':'</span><span class="p">,</span><span class="n">song_title</span><span class="p">,</span><span class="s2">"&lt;"</span><span class="o">+</span><span class="n">s_n</span><span class="o">+</span><span class="s2">"&gt;"</span><span class="p">,</span><span class="s2">"앨범명:"</span><span class="p">)</span>
+        
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">continue</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span> <span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'class'</span><span class="p">:</span><span class="s1">'wrap_song_info'</span><span class="p">})</span>
+<span class="n">album</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'class'</span><span class="p">:</span><span class="s1">'ellipsis rank03'</span><span class="p">})</span>
+<span class="n">ab</span> <span class="o">=</span> <span class="n">album</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ab</span><span class="p">)</span>
+
+<span class="c1">#ab = album[0].find_all</span>
+
+<span class="c1"># singer_name = temp[0].find_all('span',attrs = {'class':'checkEllipsis'})</span>
+<span class="c1"># for i in range(20):</span>
+<span class="c1">#     singer = temp[i].find_all('div',attrs = {'class':'ellipsis rank02'})</span>
+<span class="c1">#     for j in range(len(singer)):</span>
+<span class="c1">#         singer_name = singer[j].get_text()</span>
+<span class="c1">#     print(i,singer_name)</span>
+<span class="c1">#        print(int((i/2+1)),':',song_title)</span>
+ 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="앨범-명-넣기-마저-확인">
+<a class="anchor" href="#%EC%95%A8%EB%B2%94-%EB%AA%85-%EB%84%A3%EA%B8%B0-%EB%A7%88%EC%A0%80-%ED%99%95%EC%9D%B8" aria-hidden="true"><span class="octicon octicon-link"></span></a>앨범 명 넣기 마저 확인<a class="anchor-link" href="#%EC%95%A8%EB%B2%94-%EB%AA%85-%EB%84%A3%EA%B8%B0-%EB%A7%88%EC%A0%80-%ED%99%95%EC%9D%B8"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="[연습-2]">
+<a class="anchor" href="#%5B%EC%97%B0%EC%8A%B5-2%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>[연습-2]<a class="anchor-link" href="#%5B%EC%97%B0%EC%8A%B5-2%5D"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>2) 네이버에서 이미지를 검색한 후 나온 결과 중 5개의 이미지를 저장<ul>
+<li>자바 스크립트로 인해 기존 방식으로 진행시 이미지 호출 불가</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<pre>
+셀레늄 다운로드
+pip install selenium
+셀레늄 다운로드 상태, 버전 확인
+pip show selenium
+</pre>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<pre>
+구글에서 'chrome://version' 확인
+chromedriver 검색 후 버전에 맞는 파일 다운 및 압축 해제(작업환경에 압축 해제 권유)
+</pre>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://search.naver.com/search.naver?where=image&amp;sm=tab_jum&amp;query=</span><span class="si">%E</span><span class="s2">A%B3%A0</span><span class="si">%E</span><span class="s2">A%B8%B0"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'User-Agent'</span> <span class="p">:</span> <span class="s1">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36'</span><span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">()</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL</span><span class="p">)</span>
+<span class="c1"># 이동 후 1초간 대기</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">driver</span><span class="o">.</span><span class="n">page_source</span><span class="p">)</span> <span class="c1"># 셀레늄으로 특정사이트 이동 후 내용 다시 긁어오기</span>
+
+
+
+<span class="c1"># print(soup)</span>
+
+<span class="c1"># 웹 확인용</span>
+<span class="c1"># with open('bts.html','w',encoding = 'utf-8') as f:</span>
+<span class="c1">#     f.write(response.text)</span>
+
+<span class="c1"># print('a')</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">meats_img</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'img'</span><span class="p">,</span> <span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'class'</span><span class="p">:</span><span class="s2">"_image _listImage"</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"그림 갯수 :"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">meats_img</span><span class="p">))</span> <span class="c1"># 첫 화면에 보이는 이미지 갯수 -&gt; 실제로는 스크롤할수록 계속 나옴</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>그림 갯수 : 48
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">img_dir</span> <span class="o">=</span> <span class="s1">'./meats_img/'</span>
+<span class="c1"># 폴더 생성, 폴더명 중복시 생성 안함</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">img_dir</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">img_dir</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"폴더 생성"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"폴더 존재"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>폴더 생성
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">image</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">meats_img</span><span class="p">):</span>
+    <span class="n">img_url</span> <span class="o">=</span> <span class="n">image</span><span class="p">[</span><span class="s1">'src'</span><span class="p">]</span> <span class="c1"># 이미지 소스 호출</span>
+    
+    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">img_url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">'http'</span><span class="p">)):</span>
+        <span class="k">continue</span>
+    
+    <span class="n">img_src</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">img_url</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
+    <span class="n">img_src</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">img_dir</span> <span class="o">+</span> <span class="s1">'meats_</span><span class="si">{}</span><span class="s1">.jpg'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="s1">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+       <span class="c1"># print(img_src)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">img_src</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span> 
+            <span class="k">break</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'사진 저장 완료'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;Response [200]&gt;
+&lt;Response [200]&gt;
+&lt;Response [200]&gt;
+&lt;Response [200]&gt;
+&lt;Response [200]&gt;
+&lt;Response [200]&gt;
+&lt;Response [200]&gt;
+&lt;Response [200]&gt;
+&lt;Response [200]&gt;
+사진 저장 완료
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># .startswith("해당 문구") -&gt; 해당 문구로 시작하는지 확인</span>
+<span class="c1"># .endswith("해당 문구") -&gt; 해당 문구로 끝나는지 확인</span>
+
+<span class="n">temp1</span> <span class="o">=</span> <span class="s2">"http://www.naver.com"</span>
+<span class="n">temp2</span> <span class="o">=</span> <span class="s2">"http://www.daum.net"</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">temp1</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">'http'</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">temp2</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">'http'</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">temp1</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'com'</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">temp2</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'com'</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
+True
+True
+False
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="29176/temp"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/temp/%ED%81%AC%EB%A1%A4%EB%A7%81/python/2021/11/22/Exercise01.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/temp/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/temp/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/temp/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>29176</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/temp/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/temp/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
